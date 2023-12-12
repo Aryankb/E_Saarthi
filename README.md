@@ -3,11 +3,11 @@
 This project is a [brief description of what the project does].
 
 ## Table of Contents
-Installation
-Usage
-Dependencies
-Endpoints
-License
+Installation  
+Usage  
+Dependencies  
+Endpoints  
+License  
 ## Installation
 To run this project locally, follow these steps:
 
