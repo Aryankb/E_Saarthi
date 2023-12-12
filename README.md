@@ -28,6 +28,7 @@ Access the application through a web browser at http://localhost:5000 or [specif
 
 The geographical analysis shows the name of location on hovering over the marker. It shows the number and type of complaints from that location if clicked on the marker.  
 
+User can submit a complain in both english or hindi. The software will translate it to english before passing it to the trained model.  
 On submitting a complain, Output on the screen will be SUSPECTED SPAM!! if the complaint submitted was ambiguous or irrelevant.  
 Output will be SUSPECTED REPEATED! if the same complaint is registered from the same location by the person having same mobile no.  
 Output will be REGISTERED SUCCESSFULLY in all other cases.
@@ -41,7 +42,7 @@ __Googletrans__
 __Pandas__  
 __Torch__  
 __Transformers__   
-## Endpoints
+## Endpoints (Handled using FLASK)
 __/__ :  Home page  
   
 __/complain__ :  User will fill a form to submit the complaint and an output statement will pop on the screen regarding weather the complaint was registered successfully or suspected spam or suspected repeated.  In the first case, spam column will contain 0. In the last 2 cases, spam column in the database will have a value 1.  
