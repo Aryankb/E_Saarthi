@@ -17,6 +17,7 @@ Install the required dependencies using __pip install -r requirements.txt__.
 
 The nagar , gram, vikaskhand datasets are __geocoded according to location__.  
 Download all datasets in .csv format because csv files are used for geographical analysis.  
+But, all new complaints are saved in the LOCAL SQL SERVER.  
 Geographical Analysis can be done by importing real time complaint record from MYSQL SERVER if all csv files will be copied to the MYSQL server.   
   
 All SQL tables are same as the .csv files of dataset folder except the mas_aavedan.csv table.  
