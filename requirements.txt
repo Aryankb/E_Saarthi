@@ -1,0 +1,9 @@
+flask
+numpy
+pandas
+scikit-learn
+folium
+pymysql
+torch
+googletrans
+transformers

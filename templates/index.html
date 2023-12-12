@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>E-SAARTHI COMPLAINT WEBSITE</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+  <h1>E SAARTHI COMPLAINT WEBSITE</h1>
+  <div class="buttons">
+    <a href="http://127.0.0.1:5000/complain" class="btn">REGISTER COMPLAINT</a>
+      <a href="http://127.0.0.1:5000/dashboard" class="btn">DASHBOARD</a>
+     <a href="http://127.0.0.1:5000/show_status" class="btn">SHOW COMPLAINTS</a>
+    <div class="geographical-analysis">
+      <h2>Geographical Analysis</h2>
+      <button class="geo-btn" data-option="1">Categorize by Gram</button>
+      <button class="geo-btn" data-option="2">Categorize by Nagar</button>
+      <button class="geo-btn" data-option="3">Categorize by Vikaskhand</button>
+    </div>
+  </div>
+
+  <!-- The iframe to display the map -->
+<iframe id="map-iframe" style="width: 100%; height: 715px;"></iframe>
+
+
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

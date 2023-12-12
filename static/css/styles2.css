@@ -1,0 +1,7 @@
+/* Add your CSS styles here */
+/* Style for response container */
+#responseContainer {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}

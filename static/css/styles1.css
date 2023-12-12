@@ -1,0 +1,86 @@
+/* styles1.css */
+
+/* Body */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/021/828/485/original/chhattisgarh-state-location-within-india-3d-map-vector.jpg'); /* Add your background image URL here */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* Form Container */
+form {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #444;
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    background-color: rgba(31, 31, 31, 0.7);
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Inputs and Selects */
+input[type="text"],
+textarea,
+select {
+    width: calc(100% - 12px);
+    padding: 6px;
+    margin-bottom: 10px;
+    background-color: #333;
+    border: 1px solid #444;
+    color: #ffffff;
+    border-radius: 4px;
+    background-color: rgba(31, 31, 31, 0.1);
+}
+
+/* Button */
+button {
+    padding: 10px 20px;
+    background-color: #FF4F4F; /* Change button background color */
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add transition for smooth color change */
+}
+
+
+button:hover {
+    background-color: #590000; /* Change hovering color */
+}
+
+button:active {
+    transform: scale(0.95); /* Add button clicking animation */
+}
+
+
+/* Dark Mode for Select Dropdown Arrows (Optional) */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23ffffff" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+}
+
+/* Customizing the appearance of the selected option in the dropdown (Optional) */
+option:checked {
+    background-color: #FF4F4F;
+    color: #ffffff;
+}
+#responseContainer {
+    text-align: center;
+    color: #590000; /* Change text color to blue */
+    font-size: 24px; /* Increase font size */
+    margin-top: 20px;
+    font-weight: bold;
+}

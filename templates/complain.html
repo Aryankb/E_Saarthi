@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Complaint Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles1.css') }}">
+</head>
+<body>
+    <form id="complaintForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="text" id="mobile" name="mobile"><br><br>
+
+        <label for="complain">Complain:</label>
+        <textarea id="complain" name="complain"></textarea><br><br>
+
+        <label for="gramPanchayat">Gram Panchayat:</label>
+        <select id="gramPanchayat" name="gramPanchayat">
+            <option value="124270">अछोली</option>
+            <option value="124271">अछोटी</option>
+            <option value="124272">आगर</option>
+            <option value="124273">आहेरी</option>
+            <option value="124274">अकोला</option>
+            <option value="124275">अरसी</option>
+            <option value="124276">बागडुमर</option>
+            <option value="124277">बरहापुर</option>
+            <option value="124278">बसनी</option>
+            <option value="124279">भाठाकोकड़ी</option>
+            <option value="124280">बिरेभाठा</option>
+            <option value="124281">बिरेझर</option>
+            <option value="124282">बिरझापुर</option>
+            <option value="124283">बिरेाड़ा</option>
+            <option value="124284">बेारी</option>
+            <option value="124285">चीचा</option>
+            <option value="124286">डगनिया</option>
+            <option value="124287">दानी कोकड़ी</option>
+            <option value="124288">दनिया</option>
+            <option value="124289">दारगाँव</option>
+            <option value="124290">देवरी</option>
+            <option value="124291">ढाबा</option>
+            <option value="124292">ढौर</option>
+            <option value="124293">दोड्की</option>
+            <option value="124294">डोमा</option>
+            <option value="124295">दुमार</option>
+
+        </select><br><br>
+
+        <label for="nagarPanchayat">Nagar Panchayat:</label>
+        <select id="nagarPanchayat" name="nagarPanchayat">
+            <option value="250634">धमधा</option>
+            <option value="250635">अहिवारा</option>
+            <option value="250636">जामुल</option>
+            <option value="250637">कुम्हारी</option>
+            <option value="250638">भिलाई चरोदा</option>
+            <option value="250639">भिलाई</option>
+            <option value="250640">दुर्ग</option>
+            <option value="250641">पाटन</option>
+            <option value="253153">उतई</option>
+            <option value="259999">अमलेश्वर</option>
+            <option value="296874">रिसाली</option>
+            <!-- Add more options here -->
+
+        </select><br><br>
+
+        <label for="vikasKhand">Vikas Khand:</label>
+        <select id="vikasKhand" name="vikasKhand">
+            <option value="3632">धमधा</option>
+            <option value="3635">दुर्ग</option>
+            <option value="3639">पाटन</option>
+            <!-- Add more options here -->
+        </select><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+<div id="responseContainer" style="text-align: center; "></div>
+
+    <script src="{{ url_for('static', filename='js/script1.js') }}"></script>
+
+</body>
+</html>
+
