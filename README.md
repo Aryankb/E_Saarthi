@@ -11,28 +11,30 @@ __License__
 ## Installation
 To run this project locally, follow these steps:  
   
-Install Git LFS on your system, clone the repository, run "__git lfs pull__" to fetch and download the actual large files tracked by __Git LFS__. The model.safetensors file (400 MB+) is tracked by Git LFS.  
+1. Install Git LFS on your system, clone the repository, run "__git lfs pull__" to fetch and download the actual large files tracked by __Git LFS__. The model.safetensors file (400 MB+) is tracked by Git LFS.  
   
-Install the required dependencies using __pip install -r requirements.txt__.  
+2. Install the required dependencies using __pip install -r requirements.txt__.  
 
-The nagar , gram, vikaskhand datasets are __geocoded according to location__.  
-Download all datasets in .csv format because csv files are used for geographical analysis.  
-But, all new complaints are saved in the LOCAL SQL SERVER.  
-Geographical Analysis can be done by importing real time complaint record from MYSQL SERVER if all csv files will be copied to the MYSQL server.   
+3. The nagar , gram, vikaskhand datasets are __geocoded according to location__. Make same changes in the corresponding SQL tables or directly use these csv files according to conveniwence. Make sure to download all datasets in .csv format only.
   
-All SQL tables are same as the .csv files of dataset folder except the mas_aavedan.csv table.  
-The mas_aavedan.csv dataset saves the old complaints and don't contain spam feature. Where as all new complaints are saved in the complaints table located in the LOCAL SQL SERVER. The complaints table contains a new feature __SPAM__ which takes values 0 or 1 according to the result of prediction of trained __BERT MODEL__.
+4. mas_aavedan.csv file will show the geographical analysis of old complaints only, because all NEW COMPLAINTS are saved in the LOCAL SQL SERVER.  
+  
+5. Geographical Analysis can be done by importing real time complaint records from MYSQL SERVER instead of mas_aavedan.csv file.
+  
+6. The mas_aavedan.csv dataset saves the old complaints and don't contain spam feature. Where as all new complaints are saved in the complaints table located in the LOCAL SQL SERVER. The complaints table contains a new feature __SPAM__ which takes values 0 or 1 according to the result of prediction of trained __BERT MODEL__.  
   
 ## Usage
-Run the Flask application using python app.py.  
-Access the application through a web browser at http://localhost:5000 or [specific URL if applicable] if deployed.  
-
-The geographical analysis shows the name of location on hovering over the marker. It shows the number and type of complaints from that location if clicked on the marker.  
-
-User can submit a complain in both english or hindi. The software will translate it to english before passing it to the trained model.  
-On submitting a complain, Output on the screen will be SUSPECTED SPAM!! if the complaint submitted was ambiguous or irrelevant.  
-Output will be SUSPECTED REPEATED! if the same complaint is registered from the same location by the person having same mobile no.  
-Output will be REGISTERED SUCCESSFULLY in all other cases.
+1.Run the Flask application using python app.py. Access the application through a web browser at http://localhost:5000 or [specific URL if applicable] if deployed. 
+  
+2. The geographical analysis shows the name of location on hovering over the marker. It shows the number and type of complaints from that location if clicked on the marker.  
+  
+3. User can submit a complain in both english or hindi. The software will translate it to english before passing it to the trained model.
+  
+4. On submitting a complain, Output on the screen will be SUSPECTED SPAM!! if the complaint submitted was ambiguous or irrelevant.
+  
+5. Output will be SUSPECTED REPEATED! if the same complaint is registered from the same location by the person having same mobile no.
+  
+6. Output will be REGISTERED SUCCESSFULLY in all other cases.  
 
 
 ## Dependencies
