@@ -11,19 +11,27 @@ __License__
 ## Installation
 To run this project locally, follow these steps:  
   
-Install Git LFS on your system, clone the repository, run __git lfs pull__ to fetch and download the actual large files tracked by __Git LFS__. The model.safetensors file (400 MB+) is tracked by Git LFS.  
+Install Git LFS on your system, clone the repository, run "__git lfs pull__" to fetch and download the actual large files tracked by __Git LFS__. The model.safetensors file (400 MB+) is tracked by Git LFS.  
   
 Install the required dependencies using __pip install -r requirements.txt__.  
 
 The nagar , gram, vikaskhand datasets are __geocoded according to location__.  
-Download all datasets in .csv format. (csv files are used in geographical analysis. Geographical Analysis can be done by importing real time complaint record from MYSQL SERVER if all csv files are saved in the MYSQL server.)  
-
+Download all datasets in .csv format because csv files are used for geographical analysis.  
+Geographical Analysis can be done by importing real time complaint record from MYSQL SERVER if all csv files will be copied to the MYSQL server.   
+  
 All SQL tables are same as the .csv files of dataset folder except the mas_aavedan.csv table.  
 The mas_aavedan.csv dataset saves the old complaints. All new complaints are saved in the complaints table located in the LOCAL SQL SERVER. The complaints table contains a new feature __SPAM__ which takes values 0 or 1 according to the result of prediction of trained __BERT MODEL__.
   
 ## Usage
 Run the Flask application using python app.py.  
-Access the application through a web browser at http://localhost:5000 or [specific URL if applicable].  
+Access the application through a web browser at http://localhost:5000 or [specific URL if applicable] if deployed.  
+
+The geographical analysis shows the name of location on hovering over the marker. It shows the number and type of complaints from that location if clicked on the marker.  
+
+On submitting a complain, Output on the screen will be SUSPECTED SPAM!! if the complaint submitted was ambiguous or irrelevant.  
+Output will be SUSPECTED REPEATED! if the same complaint is registered from the same location by the person having same mobile no.  
+Output will be REGISTERED SUCCESSFULLY in all other cases.
+
 
 ## Dependencies
 __Flask__  
