@@ -24,15 +24,15 @@ To run this project locally, follow these steps:
 6. The mas_aavedan.csv dataset saves the old complaints and don't contain spam feature. Where as all new complaints are saved in the complaints table located in the LOCAL SQL SERVER. The complaints table contains a new feature __SPAM__ which takes values 0 or 1 according to the result of prediction of trained __BERT MODEL__.  
   
 ## Usage
-1.Run the Flask application using python app.py. Access the application through a web browser at http://localhost:5000 or [specific URL if applicable] if deployed.
+Run the Flask application using python app.py. Access the application through a web browser at http://localhost:5000 or [specific URL if applicable] if deployed.
   
-2. The geographical analysis shows the name of location on hovering over the marker. It shows the number and type of complaints from that location if clicked on the marker.  
+1. The geographical analysis shows the name of location on hovering over the marker. It shows the number and type of complaints from that location if clicked on the marker.  
   
-3. User can submit a complain in both english or hindi. The software will translate it to english before passing it to the trained model.
+2. User can submit a complain in both english or hindi. The software will translate it to english before passing it to the trained model.
   
-4. On submitting a complain, Output on the screen will be SUSPECTED SPAM!! if the complaint submitted was ambiguous or irrelevant.
+3. On submitting a complain, Output on the screen will be SUSPECTED SPAM!! if the complaint submitted was ambiguous or irrelevant.
   
-5. Output will be SUSPECTED REPEATED! if the same complaint is registered from the same location by the person having same mobile no.
+4. Output will be SUSPECTED REPEATED! if the same complaint is registered from the same location by the person having same mobile no.
   
 6. Output will be REGISTERED SUCCESSFULLY in all other cases.  
 
