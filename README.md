@@ -1,6 +1,6 @@
-# Project Name
+# AI in Governance - Complaint Portal
 ## Description
-This project is a [brief description of what the project does].
+This project aims at leveraging the power of AI for catering the
 
 ## Table of Contents
 Installation  
@@ -29,10 +29,11 @@ Torch
 Transformers  
 ## Endpoints
 /: Home page  
-/complain: Submit complaints  
-/show_status: View complaint status  
-/dashboard: Dashboard view  
-/geographical-analysis: Endpoint for geographical analysis  
+/complain: User will fill a form to submit the complaint and an output statement will pop on the screen regarding weather the complaint was registered successfully or suspected spam or suspected repeated.  In the first case, spam column will contain 0. In the last 2 cases, spam column in the database will have a value 1.  
+/show_status: Shows the status of all complaints registered till now.  
+/dashboard: Shows the analysis of each type of classification of complaints.  
+/geographical-analysis: Endpoint for geographical analysis on the basis of gram / nagar / vikaskhand.  
 ## License
-[Specify the license under which the project is distributed].
+IIIT - NAYA RAIPUR,  
+under the supervsion of Dr. Srinivas KG
 
