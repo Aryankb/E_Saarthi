@@ -20,7 +20,7 @@ Download all datasets in .csv format because csv files are used for geographical
 Geographical Analysis can be done by importing real time complaint record from MYSQL SERVER if all csv files will be copied to the MYSQL server.   
   
 All SQL tables are same as the .csv files of dataset folder except the mas_aavedan.csv table.  
-The mas_aavedan.csv dataset saves the old complaints. All new complaints are saved in the complaints table located in the LOCAL SQL SERVER. The complaints table contains a new feature __SPAM__ which takes values 0 or 1 according to the result of prediction of trained __BERT MODEL__.
+The mas_aavedan.csv dataset saves the old complaints and don't contain spam feature. Where as all new complaints are saved in the complaints table located in the LOCAL SQL SERVER. The complaints table contains a new feature __SPAM__ which takes values 0 or 1 according to the result of prediction of trained __BERT MODEL__.
   
 ## Usage
 Run the Flask application using python app.py.  
