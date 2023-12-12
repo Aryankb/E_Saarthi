@@ -46,15 +46,15 @@ __Pandas__
 __Torch__  
 __Transformers__   
 ## Endpoints (Handled using FLASK)
-__/__ :  Home page  
+1. __/__ :  Home page  
   
-__/complain__ :  User will fill a form to submit the complaint and an output statement will pop on the screen regarding weather the complaint was registered successfully or suspected spam or suspected repeated.  In the first case, spam column will contain 0. In the last 2 cases, spam column in the database will have a value 1.  
+2. __/complain__ :  User will fill a form to submit the complaint and an output statement will pop on the screen regarding weather the complaint was registered successfully or suspected spam or suspected repeated.  In the first case, spam column will contain 0. In the last 2 cases, spam column in the database will have a value 1.  
   
-__/show_status__ :  Shows the status of all complaints registered till now.  
+3. __/show_status__ :  Shows the status of all complaints registered till now.  
   
-__/dashboard__ :  Shows the analysis of each type of classification of complaints.  
+4. __/dashboard__ :  Shows the analysis of each type of classification of complaints.  
   
-__/geographical-analysis__ :  Endpoint for geographical analysis on the basis of gram / nagar / vikaskhand. 
+5. __/geographical-analysis__ :  Endpoint for geographical analysis on the basis of gram / nagar / vikaskhand. 
   
 ## License
 __IIIT - NAYA RAIPUR__,  
