@@ -24,7 +24,7 @@ To run this project locally, follow these steps:
 6. The mas_aavedan.csv dataset saves the old complaints and don't contain spam feature. Where as all new complaints are saved in the complaints table located in the LOCAL SQL SERVER. The complaints table contains a new feature __SPAM__ which takes values 0 or 1 according to the result of prediction of trained __BERT MODEL__.  
   
 ## Usage
-1.Run the Flask application using python app.py. Access the application through a web browser at http://localhost:5000 or [specific URL if applicable] if deployed. 
+1.Run the Flask application using python app.py. Access the application through a web browser at http://localhost:5000 or [specific URL if applicable] if deployed.
   
 2. The geographical analysis shows the name of location on hovering over the marker. It shows the number and type of complaints from that location if clicked on the marker.  
   
