@@ -3,11 +3,22 @@
 This project aims at leveraging the power of AI for handling the ambiguities in the complaints submitted through the portal by __detecting spam and repeated complaints__. This project also helps the admin to analyse and classify the complaints on the basis of location with the help of __map view__ classification.
 
 ## Table of Contents
+__Pictures__
 __Installation__  
 __Usage__  
 __Dependencies__  
 __Endpoints__  
 __License__  
+## Pictures
+![Screenshot 2023-12-13 005133](https://github.com/Aryankb/E_Saarthi/assets/118632488/3f37f509-4127-4097-a3cb-8cdba3ae3a8e)
+![image](https://github.com/Aryankb/E_Saarthi/assets/118632488/bf10ca4f-df49-4758-a6d4-07b0d267e8ad)
+![image](https://github.com/Aryankb/E_Saarthi/assets/118632488/e694248a-fbbe-4700-973d-35460ce4eff5)
+![image](https://github.com/Aryankb/E_Saarthi/assets/118632488/9f937d5f-65b0-4186-bb9c-fc9e16c04cfa)
+![image](https://github.com/Aryankb/E_Saarthi/assets/118632488/09f718eb-3e31-4aef-91c2-c9c5d180faad)
+![image](https://github.com/Aryankb/E_Saarthi/assets/118632488/6f1b6502-64f1-4eff-a063-357fad3ac9e7)
+
+
+
 ## Installation
 To run this project locally, follow these steps:  
   
